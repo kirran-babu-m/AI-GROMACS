@@ -12,8 +12,9 @@ st.caption("Quantum-level accuracy surrogate dynamics powered by generative conf
 
 st.divider()
 
-# 1. Chemical Input & Descriptors
+# 1. Chemical Input & Classical Descriptors
 st.header("🧪 1. Drug Molecule Configuration")
+
 smiles = st.text_input("Enter SMILES Structure", value="CC(=O)Oc1ccccc1C(=O)O")
 
 if smiles:
@@ -50,7 +51,7 @@ if smiles:
 
         st.divider()
 
-        # 2. AI Dynamics Engine
+        # 2. AI Dynamics Engine (GROMACS Surrogate)
         st.header("⚡ 2. AI-Accelerated Molecular Dynamics")
         st.write("Generates trajectories orders of magnitude faster than GROMACS numerical integration.")
 
